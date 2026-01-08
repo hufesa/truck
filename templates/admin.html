@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+{% block content %}
+<h1 class="text-center">Administración 🚚</h1>
+<div class="row">
+  <div class="col-md-8 offset-md-2">
+    <a href="{{ url_for('add_truck') }}" class="btn btn-primary mb-3">Camion</a>
+    <a href="{{ url_for('add_truck') }}" class="btn btn-primary mb-3">Empresas</a>
+    <a href="{{ url_for('add_truck') }}" class="btn btn-primary mb-3">Mantenimiento</a>
+    <a href="{{ url_for('add_truck') }}" class="btn btn-primary mb-3">Servicios</a>
+    <a href="{{ url_for('add_truck') }}" class="btn btn-primary mb-3">Pagos</a>
+    <a href="{{ url_for('add_truck') }}" class="btn btn-primary mb-3">Viáticos</a>
+
+  </div>
+</div>
+{% endblock %}

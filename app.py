@@ -8,6 +8,17 @@ def about():
 
 
 # Página principal: lista de camiones
+
+@app.route("/admin")
+def admin(): 
+     return render_template("admin.html")
+    
+@app.route("/truck") 
+def conductor(): 
+    return "<h1>Bienvenido Conductor</h1>"
+
+
+
 @app.route("/")
 def index():
     return render_template("index.html", trucks=trucks)
