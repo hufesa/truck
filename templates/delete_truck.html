@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+{% block content %}
+<h1 class="text-center text-danger">Eliminar Camión 🚚</h1>
+<div class="row">
+  <div class="col-md-6 offset-md-3">
+    <div class="card p-3 shadow">
+      <p>¿Estás seguro de que deseas eliminar el camión <strong>{{ truck.marca }} - {{ truck.modelo }} ({{ truck.año }})</strong>?</p>
+      <form method="POST">
+        <button type="submit" class="btn btn-danger">Sí, eliminar</button>
+        <a href="{{ url_for('index') }}" class="btn btn-secondary">Cancelar</a>
+      </form>
+    </div>
+  </div>
+</div>
+{% endblock %}
